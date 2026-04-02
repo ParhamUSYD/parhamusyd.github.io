@@ -5,21 +5,9 @@ const navLinks = document.querySelectorAll('.desktop-nav a');
 const sections = [...document.querySelectorAll('main section[id]')];
 const mediaShells = document.querySelectorAll('.media-shell');
 
-if (revealItems.length) {
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.14 }
-  );
-
-  revealItems.forEach((item) => revealObserver.observe(item));
-}
+/* Make all content visible immediately.
+   This removes the risk of the whole page staying hidden. */
+revealItems.forEach((item) => item.classList.add('revealed'));
 
 const setActiveNav = () => {
   if (!sections.length || !navLinks.length) return;
@@ -31,11 +19,13 @@ const setActiveNav = () => {
     const height = section.offsetHeight;
     const id = section.getAttribute('id');
 
-    if (scrollY >= top && scrollY < top + height) {
-      navLinks.forEach((link) => {
-        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
-      });
-    }
+    navLinks.forEach((link) => {
+      const href = link.getAttribute('href') || '';
+      link.classList.toggle(
+        'active',
+        href === `#${id}` && scrollY >= top && scrollY < top + height
+      );
+    });
   });
 };
 
@@ -50,7 +40,7 @@ mediaShells.forEach((shell) => {
 
   img.addEventListener('error', markMissing);
 
-  if (img.complete && (typeof img.naturalWidth === 'number') && img.naturalWidth === 0) {
+  if (img.complete && typeof img.naturalWidth === 'number' && img.naturalWidth === 0) {
     markMissing();
   }
 });
