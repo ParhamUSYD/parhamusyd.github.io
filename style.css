@@ -1101,13 +1101,19 @@ main,
   margin-top: 1rem;
 }
 
-/* Reveal animations */
+/* Reveal animations: safe version */
 .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.js .reveal {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
-.reveal.revealed {
+
+.js .reveal.revealed {
   opacity: 1;
   transform: translateY(0);
 }

@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js');
+
 const revealItems = document.querySelectorAll('.reveal');
 const navLinks = document.querySelectorAll('.desktop-nav a');
 const sections = [...document.querySelectorAll('main section[id]')];
