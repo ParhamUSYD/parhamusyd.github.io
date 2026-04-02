@@ -3,105 +3,469 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Parham Vatankhah | Portfolio</title>
+  <title>Parham Vatankhah | CFD, Data Analysis, AI & Automation</title>
   <meta
     name="description"
-    content="Portfolio of Parham Vatankhah - CFD, AI, automation, and engineering projects."
+    content="Portfolio of Parham Vatankhah — computational hemodynamics, data analysis, machine learning, applied AI, and engineering automation."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
   />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="page-glow glow-1"></div>
+  <div class="page-glow glow-2"></div>
+  <div class="grid-overlay"></div>
+
   <header class="site-header">
-    <div class="container nav">
-      <div class="logo">Parham Vatankhah</div>
-      <nav>
+    <div class="container nav-shell">
+      <a class="brand" href="#top">
+        <span class="brand-dot"></span>
+        <span>Parham Vatankhah</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
+        <a href="#domains">Domains</a>
         <a href="#projects">Projects</a>
         <a href="#cv">CV</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <a class="header-cta" href="#contact">Let’s connect</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-content">
-        <p class="eyebrow">CFD • AI • Automation</p>
-        <h1>Building engineering tools that turn complex simulation workflows into usable systems.</h1>
-        <p class="hero-text">
-          I’m Parham Vatankhah, a PhD researcher working at the intersection of
-          computational fluid dynamics, cardiovascular modelling, and AI-driven automation.
-        </p>
-        <div class="hero-buttons">
-          <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">CFD • Computational Hemodynamics • Data Analysis • Applied AI</p>
+          <h1>Building serious technical systems from simulation, data, and automation.</h1>
+          <p class="hero-text">
+            I work across cardiovascular CFD, quantitative analysis, and practical AI tooling —
+            turning technically heavy workflows into reproducible pipelines, clear evidence, and usable engineering systems.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore Projects</a>
+            <a class="btn btn-secondary" href="assets/pdf/Parham_Vatankhah_CV_Master_Website.pdf" target="_blank" rel="noopener noreferrer">Open CV</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <span class="metric-value">CFD</span>
+              <span class="metric-label">Cardiovascular flow modelling and hemodynamic interpretation</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value">Data</span>
+              <span class="metric-label">Decision-ready analysis and visual storytelling</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value">AI</span>
+              <span class="metric-label">Practical automation and engineering tool design</span>
+            </div>
+          </div>
         </div>
+
+        <aside class="hero-panel reveal reveal-delay-1" aria-label="Profile summary">
+          <div class="panel panel-primary">
+            <p class="panel-kicker">Current focus</p>
+            <h2>Engineering depth, analytical clarity, and buildable automation.</h2>
+            <p>
+              My work sits at the intersection of computational hemodynamics,
+              structured data analysis, and AI-assisted technical workflows.
+            </p>
+          </div>
+
+          <div class="panel-grid">
+            <div class="panel">
+              <p class="mini-label">Research</p>
+              <strong>Computational hemodynamics</strong>
+              <span>Aortic flow, WSS, helicity, efficiency, and verification studies</span>
+            </div>
+            <div class="panel">
+              <p class="mini-label">Analysis</p>
+              <strong>Evidence from messy data</strong>
+              <span>Concentration, composition, comparison, and outcome-focused communication</span>
+            </div>
+            <div class="panel wide">
+              <p class="mini-label">Build</p>
+              <strong>Automation that removes friction</strong>
+              <span>Python workflows, AI-guided tools, and systems that make technical work repeatable.</span>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 
     <section id="about" class="section">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          My work focuses on cardiovascular hemodynamics, CFD automation,
-          simulation pipelines, and practical AI applications in engineering and healthcare.
-        </p>
+      <div class="container section-shell reveal">
+        <div class="section-heading">
+          <p class="section-tag">About</p>
+          <h2>Deep technical work, presented with clarity.</h2>
+        </div>
+
+        <div class="two-col">
+          <div class="copy-card">
+            <p>
+              My background combines mechanical engineering, cardiovascular CFD,
+              scientific programming, biomedical research, and analytical reporting.
+              I care about two things: technical rigor and practical usefulness.
+            </p>
+            <p>
+              That means building reproducible workflows, documenting assumptions well,
+              turning raw outputs into interpretable evidence, and designing systems that reduce wasted effort.
+            </p>
+          </div>
+
+          <div class="quote-card">
+            <span class="quote-mark">“</span>
+            <p>
+              The goal is not just to generate results. The goal is to make complex technical work trustworthy,
+              explainable, and useful to the people making decisions from it.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="section alt">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="project-grid">
-          <article class="card">
-            <h3>Automated CFD Workflow</h3>
+    <section id="domains" class="section section-alt">
+      <div class="container reveal">
+        <div class="section-heading compact">
+          <p class="section-tag">Core domains</p>
+          <h2>Three areas I am deliberately building around</h2>
+          <p class="section-intro">
+            This structure keeps the portfolio sharp: simulation depth, analytical interpretation, and tool building.
+          </p>
+        </div>
+
+        <div class="domain-grid">
+          <article class="domain-card domain-accent-1">
+            <span class="feature-number">01</span>
+            <h3>CFD &amp; Computational Hemodynamics</h3>
             <p>
-              A pipeline for geometry preparation, meshing, simulation setup,
-              and post-processing for cardiovascular CFD studies.
+              Transient flow modelling, hemodynamic metrics, aortic morphology studies,
+              boundary-condition design, verification, and publication-quality interpretation.
             </p>
           </article>
 
-          <article class="card">
-            <h3>Ansys Fluent Support Assistant</h3>
+          <article class="domain-card domain-accent-2">
+            <span class="feature-number">02</span>
+            <h3>Data Analysis &amp; Machine Learning</h3>
             <p>
-              A concept for an AI assistant that explains CFD fundamentals and
-              provides step-by-step Fluent guidance.
+              Turning complex datasets into structured findings through cleaning,
+              comparison, concentration analysis, visual storytelling, and model-oriented thinking.
             </p>
           </article>
 
-          <article class="card">
-            <h3>AI + Medical Engineering</h3>
+          <article class="domain-card domain-accent-3">
+            <span class="feature-number">03</span>
+            <h3>Applied AI &amp; Automation</h3>
             <p>
-              Projects exploring AI, MRI-derived data, and engineering tools
-              for clinically useful hemodynamic analysis.
+              Building tools and workflows that reduce manual effort, improve repeatability,
+              and make technical knowledge easier to access and use.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="cv" class="section">
-      <div class="container">
-        <h2>CV</h2>
-        <p>You can view my CV here.</p>
-        <a class="btn btn-primary" href="/assets/pdf/Parham_Vatankhah_CV_Master_Website.pdf" target="_blank">Open CV</a>
+    <section id="projects" class="section">
+      <div class="container reveal">
+        <div class="section-heading compact">
+          <p class="section-tag">Selected work</p>
+          <h2>Projects</h2>
+          <p class="section-intro">
+            Organised by domain so the site feels intentional rather than like a random stack of cards.
+          </p>
+        </div>
+
+        <div class="project-index">
+          <a class="index-chip" href="#proj-cfd">CFD &amp; Computational Hemodynamics</a>
+          <a class="index-chip" href="#proj-data">Data Analysis &amp; Machine Learning</a>
+          <a class="index-chip" href="#proj-ai">Applied AI &amp; Automation</a>
+        </div>
+
+        <div id="proj-cfd" class="project-category">
+          <div class="category-heading">
+            <p class="category-label">Category 01</p>
+            <h3>CFD &amp; Computational Hemodynamics</h3>
+          </div>
+
+          <div class="project-grid two-up">
+            <article class="project-card project-accent-1">
+              <div class="project-topline"></div>
+              <div class="project-body">
+                <p class="project-type">Cardiovascular research</p>
+                <h4>Thoracic Aortic Hemodynamics Studies</h4>
+                <p>
+                  Simulation-driven studies of healthy and diseased aortic flow, focusing on wall shear stress,
+                  helicity, flow efficiency, morphology effects, and clinically relevant interpretation.
+                </p>
+                <ul>
+                  <li>Transient cardiovascular CFD</li>
+                  <li>Verification and sensitivity analysis</li>
+                  <li>Publication-grade figure and result generation</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card project-accent-1">
+              <div class="project-topline"></div>
+              <div class="project-body">
+                <p class="project-type">Pipeline design</p>
+                <h4>Automated CFD Workflow</h4>
+                <p>
+                  A structured workflow for geometry preparation, meshing, solver setup,
+                  and reproducible post-processing for cardiovascular simulation studies.
+                </p>
+                <ul>
+                  <li>Reduces manual setup time</li>
+                  <li>Improves consistency and traceability</li>
+                  <li>Supports scale-up for larger parameter studies</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div id="proj-data" class="project-category">
+          <div class="category-heading">
+            <p class="category-label">Category 02</p>
+            <h3>Data Analysis &amp; Machine Learning</h3>
+          </div>
+
+          <article class="case-card">
+            <div class="case-card-grid">
+              <div>
+                <p class="case-label">Featured case study</p>
+                <h4>South Australian Housing Stress Analysis</h4>
+                <p class="case-summary">
+                  An evidence-led analysis of South Australian housing-stress data designed to show where affordability pressure is concentrated,
+                  which income groups are most exposed, and how tenure type shapes the burden. The case study turns a public dataset into a clean,
+                  policy-facing story with clear definitions, figure-by-figure interpretation, and portfolio-quality presentation.
+                </p>
+
+                <div class="tool-chips">
+                  <span>Python-based analysis</span>
+                  <span>Comparative visualisation</span>
+                  <span>Concentration analysis</span>
+                  <span>Insight writing</span>
+                  <span>Structured storytelling</span>
+                </div>
+
+                <div class="case-meta">
+                  <div class="stat-card">
+                    <span class="stat-value">7</span>
+                    <span class="stat-label">figures structured into a full case study page</span>
+                  </div>
+                  <div class="stat-card">
+                    <span class="stat-value">63.9%</span>
+                    <span class="stat-label">of total burden captured by the top 10 LGAs</span>
+                  </div>
+                  <div class="stat-card">
+                    <span class="stat-value">Metro-led</span>
+                    <span class="stat-label">burden concentrated in metropolitan Adelaide LGAs</span>
+                  </div>
+                </div>
+
+                <div class="hero-actions" style="margin-top:1.35rem;">
+                  <a class="btn btn-primary" href="projects/housing-stress.html">View Full Case Study</a>
+                </div>
+              </div>
+
+              <div class="preview-stack" aria-label="Case study preview figures">
+                <div class="preview-grid">
+                  <article class="preview-card">
+                    <div class="media-shell" data-filename="fig01_top15_lgas_clean.png">
+                      <img
+                        src="assets/images/projects/housing-stress/fig01_top15_lgas_clean.png"
+                        alt="Top 15 South Australian LGAs ranked by households in 30 percent housing stress"
+                        loading="lazy"
+                      />
+                      <div class="placeholder-art">
+                        <div class="placeholder-chart" aria-hidden="true">
+                          <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                      </div>
+                      <div class="media-fallback">
+                        <strong>Figure slot ready</strong>
+                        <code>fig01_top15_lgas_clean.png</code>
+                        <p>Drop the real chart into the housing-stress figures folder and it will appear automatically.</p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="preview-card">
+                    <div class="media-shell" data-filename="fig05_cumulative_share_lgas.png">
+                      <img
+                        src="assets/images/projects/housing-stress/fig05_cumulative_share_lgas.png"
+                        alt="Cumulative share curve of housing stress across ranked South Australian LGAs"
+                        loading="lazy"
+                      />
+                      <div class="placeholder-art">
+                        <div class="placeholder-chart" aria-hidden="true">
+                          <span style="height:24%"></span><span style="height:40%"></span><span style="height:58%"></span><span style="height:78%"></span><span style="height:92%"></span>
+                        </div>
+                      </div>
+                      <div class="media-fallback">
+                        <strong>Figure slot ready</strong>
+                        <code>fig05_cumulative_share_lgas.png</code>
+                        <p>This preview card becomes the real figure as soon as the PNG exists in the expected folder.</p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="preview-card wide">
+                    <div class="media-shell" data-filename="fig06_vulnerability_scatter.png">
+                      <img
+                        src="assets/images/projects/housing-stress/fig06_vulnerability_scatter.png"
+                        alt="Scatter plot comparing housing stress burden against very-low-income concentration across LGAs"
+                        loading="lazy"
+                      />
+                      <div class="placeholder-art">
+                        <div class="placeholder-chart" aria-hidden="true">
+                          <span style="height:18%"></span><span style="height:28%"></span><span style="height:38%"></span><span style="height:52%"></span><span style="height:66%"></span>
+                        </div>
+                      </div>
+                      <div class="media-fallback">
+                        <strong>Figure slot ready</strong>
+                        <code>fig06_vulnerability_scatter.png</code>
+                        <p>The homepage is already wired to the exact filenames, so no extra editing is needed later.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div id="proj-ai" class="project-category">
+          <div class="category-heading">
+            <p class="category-label">Category 03</p>
+            <h3>Applied AI &amp; Automation</h3>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-accent-2">
+              <div class="project-topline"></div>
+              <div class="project-body">
+                <p class="project-type">AI assistant concept</p>
+                <h4>Ansys Fluent Support Assistant</h4>
+                <p>
+                  An AI tool designed to explain CFD fundamentals and provide step-by-step task guidance
+                  for Fluent users in practical engineering workflows.
+                </p>
+                <ul>
+                  <li>Fundamental explanations for learners</li>
+                  <li>Task-based guidance for software workflows</li>
+                  <li>Lower barrier to effective CFD practice</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card project-accent-3">
+              <div class="project-topline"></div>
+              <div class="project-body">
+                <p class="project-type">Healthcare tool direction</p>
+                <h4>AI + MRI + Hemodynamic Analysis</h4>
+                <p>
+                  A direction focused on combining imaging-derived data, simulation outputs,
+                  and intelligent tooling to support clinically useful cardiovascular analysis.
+                </p>
+                <ul>
+                  <li>MRI-informed data workflows</li>
+                  <li>Engineering interpretation layers</li>
+                  <li>Future decision-support potential</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card project-accent-2">
+              <div class="project-topline"></div>
+              <div class="project-body">
+                <p class="project-type">Workflow automation</p>
+                <h4>Research-to-Report Automation</h4>
+                <p>
+                  A broader automation philosophy for turning technical outputs into clean figures,
+                  consistent summaries, and decision-ready reporting with less manual repetition.
+                </p>
+                <ul>
+                  <li>Python-driven repeatable reporting</li>
+                  <li>Cleaner handoff from analysis to communication</li>
+                  <li>Less friction in technical projects</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
-  <section id="contact" class="section alt">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:vatankhah.parham@gmail.com">vatankhah.parham@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/parham-vatankhah-81b4031a6" target="_blank" rel="noopener noreferrer">linkedin.com/in/parham-vatankhah-81b4031a6</a></p>
-      <p>GitHub: <a href="https://github.com/ParhamUSYD" target="_blank" rel="noopener noreferrer">github.com/ParhamUSYD</a></p>
-      <p>Phone: <a href="tel:+61493332520">+61 493 332 520</a></p>
-    </div>
-  </section>
+    <section id="cv" class="section section-alt">
+      <div class="container reveal">
+        <div class="cv-card">
+          <div>
+            <p class="section-tag">Professional profile</p>
+            <h2>Curriculum Vitae</h2>
+            <p class="section-intro">
+              A detailed summary of my research, technical experience, publications, awards, and teaching background.
+            </p>
+          </div>
+          <div>
+            <a class="btn btn-primary" href="assets/pdf/Parham_Vatankhah_CV_Master_Website.pdf" target="_blank" rel="noopener noreferrer">Open CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container reveal">
+        <div class="contact-shell">
+          <div class="section-heading compact">
+            <p class="section-tag">Contact</p>
+            <h2>Let’s build something serious.</h2>
+            <p class="section-intro">
+              Research collaboration, engineering automation, AI tools, data work, or a sharp technical conversation.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:vatankhah.parham@gmail.com">
+              <span class="contact-label">Email</span>
+              <strong>vatankhah.parham@gmail.com</strong>
+            </a>
+
+            <a class="contact-card" href="https://www.linkedin.com/in/parham-vatankhah-81b4031a6" target="_blank" rel="noopener noreferrer">
+              <span class="contact-label">LinkedIn</span>
+              <strong>parham-vatankhah-81b4031a6</strong>
+            </a>
+
+            <a class="contact-card" href="https://github.com/ParhamUSYD" target="_blank" rel="noopener noreferrer">
+              <span class="contact-label">GitHub</span>
+              <strong>github.com/ParhamUSYD</strong>
+            </a>
+
+            <a class="contact-card" href="tel:+61493332520">
+              <span class="contact-label">Phone</span>
+              <strong>+61 493 332 520</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-shell">
       <p>© 2026 Parham Vatankhah</p>
+      <p>Designed for clarity, technical credibility, and elegant case-study presentation.</p>
     </div>
   </footer>
 

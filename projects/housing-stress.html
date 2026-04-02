@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>South Australian Housing Stress Analysis | Parham Vatankhah</title>
+<meta content="Case study by Parham Vatankhah analysing South Australian housing stress through geographic concentration, income vulnerability, tenure type, and figure-driven interpretation." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-glow glow-1"></div>
+<div class="page-glow glow-2"></div>
+<div class="grid-overlay"></div>
+<header class="site-header">
+<div class="container nav-shell">
+<a class="brand" href="../index.html#top">
+<span class="brand-dot"></span>
+<span>Parham Vatankhah</span>
+</a>
+<nav aria-label="Primary navigation" class="desktop-nav">
+<a href="../index.html#about">About</a>
+<a href="../index.html#domains">Domains</a>
+<a href="../index.html#projects">Projects</a>
+<a href="../index.html#cv">CV</a>
+<a href="../index.html#contact">Contact</a>
+</nav>
+<a class="header-cta" href="../index.html#contact">Let’s connect</a>
+</div>
+</header>
+<main>
+<section class="section">
+<div class="container reveal">
+<a class="breadcrumb" href="../index.html#proj-data">
+<span>Portfolio</span>
+<span class="crumb-dot"></span>
+<span>Data Analysis &amp; Machine Learning</span>
+</a>
+<div class="case-hero">
+<div class="case-hero-copy">
+<p class="case-label">Data analysis case study</p>
+<h1 class="page-title">South Australian Housing Stress Analysis</h1>
+<p class="case-summary">
+              A figure-driven analysis of South Australian housing-stress data aimed at answering three practical questions:
+              where the burden is concentrated, who is most affected, and how housing tenure changes the story.
+              The project turns a public dataset into a clear, decision-friendly narrative rather than a pile of disconnected charts.
+            </p>
+<div class="tool-chips">
+<span>Python-based analysis</span>
+<span>Data cleaning</span>
+<span>Comparative visualisation</span>
+<span>Concentration analysis</span>
+<span>Insight writing</span>
+<span>Portfolio presentation</span>
+</div>
+<div class="case-nav">
+<a class="mini-link" href="#definitions">Definitions</a>
+<a class="mini-link" href="#findings">Key findings</a>
+<a class="mini-link" href="#figures">All 7 figures</a>
+<a class="mini-link" href="#methods">Methods</a>
+</div>
+</div>
+<aside class="case-hero-side">
+<div class="stat-card">
+<span class="stat-value">2018</span>
+<span class="stat-label">dataset year referenced in the analysis</span>
+</div>
+<div class="stat-card">
+<span class="stat-value">63.9%</span>
+<span class="stat-label">of statewide housing stress captured by the top 10 LGAs</span>
+</div>
+<div class="stat-card">
+<span class="stat-value">7 figures</span>
+<span class="stat-label">integrated into one documented case-study page</span>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section class="section section-alt" id="definitions">
+<div class="container reveal">
+<div class="section-heading compact">
+<p class="section-tag">Definitions &amp; context</p>
+<h2>Plain-English interpretation of the dataset terms</h2>
+<p class="section-intro">
+            These clarifications make the project readable for people outside housing policy, which matters on a portfolio site.
+          </p>
+</div>
+<div class="glossary-grid">
+<article class="glossary-card">
+<span class="glossary-term">LGA</span>
+<p>
+              Local Government Area. This is the geographic unit used to compare areas across South Australia,
+              similar to comparing local council areas rather than individual suburbs.
+            </p>
+</article>
+<article class="glossary-card">
+<span class="glossary-term">30% housing stress</span>
+<p>
+              A widely used affordability benchmark where a household is considered under housing-cost pressure when
+              housing costs exceed 30% of household income. In this project, the dataset counts households classified under that rule.
+            </p>
+</article>
+<article class="glossary-card">
+<span class="glossary-term">Tenure type</span>
+<p>
+              The housing arrangement: for example renting privately, renting publicly, or purchasing a home.
+              It helps show whether affordability pressure is concentrated among renters, buyers, or both.
+            </p>
+</article>
+<article class="glossary-card">
+<span class="glossary-term">Rented: Public</span>
+<p>
+              Public rental refers to government or community housing arrangements. It is not the same as standard private rental through the market.
+            </p>
+</article>
+<article class="glossary-card">
+<span class="glossary-term">South Australia</span>
+<p>
+              When a figure shows South Australia as a whole, it is presenting the statewide aggregate rather than one single LGA.
+            </p>
+</article>
+<article class="glossary-card">
+<span class="glossary-term">Prefixes like C / DC / RC</span>
+<p>
+              Some LGA names include an administrative prefix such as City (C), District Council (DC), or Regional Council (RC).
+              Those labels describe the council type, not a different kind of metric.
+            </p>
+</article>
+</div>
+</div>
+</section>
+<section class="section" id="findings">
+<div class="container reveal">
+<div class="section-heading compact">
+<p class="section-tag">What the analysis found</p>
+<h2>Cross-figure findings</h2>
+<p class="section-intro">These are the recurring patterns that appear when the seven figures are read together rather than as isolated charts.</p>
+</div>
+<div class="data-point-grid">
+<article class="data-point">
+<strong>Geographic concentration</strong>
+<span>The largest burden sits in metropolitan Adelaide LGAs rather than being evenly spread across the state.</span>
+</article>
+<article class="data-point">
+<strong>Income vulnerability</strong>
+<span>Very low-income households are the largest affected group in every top-ranked LGA.</span>
+</article>
+<article class="data-point">
+<strong>Tenure pattern</strong>
+<span>Private rental is the largest statewide pathway into housing stress, but purchasing households also contribute strongly.</span>
+</article>
+<article class="data-point">
+<strong>Top-burden LGAs</strong>
+<span>Onkaparinga ranks highest, followed by Salisbury and Port Adelaide Enfield.</span>
+</article>
+<article class="data-point">
+<strong>Most vulnerable profile</strong>
+<span>Playford does not have the highest total burden, but it has the strongest very-low-income concentration.</span>
+</article>
+<article class="data-point">
+<strong>Local variation matters</strong>
+<span>High-burden LGAs share similar broad patterns, but the mix of renting, purchasing, and public rental still varies by place.</span>
+</article>
+</div>
+</div>
+</section>
+<section class="section section-alt">
+<div class="container reveal">
+<div class="case-layout">
+<div class="case-main">
+<article class="case-section">
+<h2>Project overview</h2>
+<p>
+                This project analyses South Australian housing-stress data to identify where affordability pressure is concentrated,
+                which income groups dominate the burden, and how tenure type changes the pattern. The work is less about
+                showing charts for their own sake and more about turning a public dataset into a clear geographic and socioeconomic story.
+              </p>
+<p>
+                That makes it a good portfolio example of structured analysis, careful definition of terms, and figure-led communication aimed at a non-specialist audience.
+              </p>
+</article>
+<article class="case-section">
+<h2>Questions addressed</h2>
+<div class="question-grid">
+<div class="question-card">Where is housing stress concentrated across South Australia?</div>
+<div class="question-card">Which income groups dominate the burden in the highest-stress LGAs?</div>
+<div class="question-card">Is affordability pressure mainly a rental issue, or also a purchasing issue?</div>
+<div class="question-card">Which LGAs combine large burden with deeper income vulnerability?</div>
+</div>
+</article>
+</div>
+<aside class="sidebar-stack">
+<article class="sidebar-card">
+<span class="sidebar-label">Why it matters</span>
+<h5>From raw data to useful narrative</h5>
+<p>
+                The project shows the ability to move from a structured dataset to a clean, readable explanation of burden,
+                vulnerability, and local variation — the kind of translation employers often actually need.
+              </p>
+</article>
+<article class="sidebar-card">
+<span class="sidebar-label">Main takeaway</span>
+<h5>Concentrated, unequal, and not just a renter story</h5>
+<p>
+                Housing stress in this dataset is geographically concentrated, driven most strongly by very low-income households,
+                and most visible in the private rental sector, while still affecting purchasing households substantially.
+              </p>
+</article>
+<article class="sidebar-card">
+<span class="sidebar-label">Practical value</span>
+<ul class="mini-list">
+<li>Shows analytical structure, not just chart making</li>
+<li>Demonstrates clean documentation and explanation</li>
+<li>Balances visual design with interpretability</li>
+<li>Good example of policy-facing communication</li>
+</ul>
+</article>
+</aside>
+</div>
+</div>
+</section>
+<section class="section" id="figures">
+<div class="container reveal">
+<div class="section-heading compact">
+<p class="section-tag">All seven figures</p>
+<h2>Figure-by-figure analysis</h2>
+<p class="section-intro">Each figure is documented with a plain-language explanation, the main analytical observations, and a concise key insight that captures why the chart matters.</p>
+</div>
+<div class="figure-grid">
+<article class="figure-card">
+<div class="figure-media-wrap">
+<div class="media-shell" data-filename="fig01_top15_lgas_clean.png">
+<img alt="Bar chart ranking the top 15 South Australian LGAs by households in 30 percent housing stress" loading="lazy" src="../assets/images/projects/housing-stress/fig01_top15_lgas_clean.png"/>
+<div class="placeholder-art">
+<div aria-hidden="true" class="placeholder-chart">
+<span></span><span></span><span></span><span></span><span></span>
+</div>
+</div>
+<div class="media-fallback">
+<strong>Waiting for the real chart image</strong>
+<code>fig01_top15_lgas_clean.png</code>
+<p>Place this PNG inside <code>assets/images/projects/housing-stress/</code> and it will appear automatically.</p>
+</div>
+</div>
+</div>
+<div class="figure-copy">
+<span class="figure-label">Figure 01</span>
+<h3>Top 15 LGAs by Households in 30% Housing Stress (2018)</h3>
+<p>This ranks the LGAs with the largest number of households in 30% housing stress.</p>
+<div class="figure-notes">
+<div class="figure-note">
+<strong>Main insights</strong>
+<p>Onkaparinga has the highest total housing-stress burden in the dataset, followed by Salisbury and Port Adelaide Enfield. The highest-burden LGAs are mostly in metropolitan Adelaide rather than regional South Australia, and there is a noticeable drop after the top few LGAs, suggesting that the burden is concentrated rather than evenly spread.</p>
+</div>
+<div class="figure-note">
+<strong>Key insight</strong>
+<p>Top housing-stress burden is concentrated in a small number of metro LGAs. Onkaparinga recorded the highest number of households in 30% housing stress, followed by Salisbury and Port Adelaide Enfield, indicating that the burden is concentrated in metropolitan Adelaide rather than being evenly distributed across South Australia.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="figure-card">
+<div class="figure-media-wrap">
+<div class="media-shell" data-filename="fig02_income_share_top10_clean.png">
+<img alt="Grouped chart showing the shares of very low, low, and moderate income households within the top 10 LGAs" loading="lazy" src="../assets/images/projects/housing-stress/fig02_income_share_top10_clean.png"/>
+<div class="placeholder-art">
+<div aria-hidden="true" class="placeholder-chart">
+<span style="height:72%"></span><span style="height:52%"></span><span style="height:34%"></span><span style="height:78%"></span><span style="height:48%"></span>
+</div>
+</div>
+<div class="media-fallback">
+<strong>Waiting for the real chart image</strong>
+<code>fig02_income_share_top10_clean.png</code>
+<p>Use the exact filename so the card updates automatically without any further HTML edits.</p>
+</div>
+</div>
+</div>
+<div class="figure-copy">
+<span class="figure-label">Figure 02</span>
+<h3>Income-Band Shares Within the Top 10 LGAs</h3>
+<p>This compares the percentage share of housing stress made up by very low-income, low-income, and moderate-income households within each of the top 10 LGAs.</p>
+<div class="figure-notes">
+<div class="figure-note">
+<strong>Main insights</strong>
+<p>In every top 10 LGA, the very low-income group is the largest contributor. Playford stands out most strongly, with the highest concentration of very-low-income households, while Tea Tree Gully and Mitcham show a more balanced distribution, meaning housing stress extends further into low- and moderate-income groups. The pattern shows that the problem is most severe for the poorest households, but it is not limited to them.</p>
+</div>
+<div class="figure-note">
+<strong>Key insight</strong>
+<p>Very low-income households are the most affected group across all top LGAs. In every high-burden LGA, the largest share of housing stress comes from very low-income households, with Playford as the most concentrated case and Tea Tree Gully and Mitcham showing a broader spread across income bands.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="figure-card">
+<div class="figure-media-wrap">
+<div class="media-shell" data-filename="fig03_tenure_totals_clean.png">
+<img alt="Chart comparing total housing stress across tenure types in South Australia" loading="lazy" src="../assets/images/projects/housing-stress/fig03_tenure_totals_clean.png"/>
+<div class="placeholder-art">
+<div aria-hidden="true" class="placeholder-chart">
+<span style="height:90%"></span><span style="height:74%"></span><span style="height:28%"></span><span style="height:16%"></span><span style="height:12%"></span>
+</div>
+</div>
+<div class="media-fallback">
+<strong>Waiting for the real chart image</strong>
+<code>fig03_tenure_totals_clean.png</code>
+<p>This figure clarifies that affordability pressure is not exclusively a rental issue.</p>
+</div>
+</div>
+</div>
+<div class="figure-copy">
+<span class="figure-label">Figure 03</span>
+<h3>Housing Stress by Tenure Type Across South Australia</h3>
+<p>This compares total housing stress across the major tenure types statewide.</p>
+<div class="figure-notes">
+<div class="figure-note">
+<strong>Main insights</strong>
+<p>Private renting is the largest tenure category associated with housing stress. Purchasing households also make up a very large share, showing that housing stress is not just a renter issue. Public rental stress exists but is much smaller in absolute numbers than private rental stress, while other landlord categories are relatively minor contributors.</p>
+</div>
+<div class="figure-note">
+<strong>Key insight</strong>
+<p>Private rental housing is the largest tenure pathway into housing stress statewide. Across South Australia, households renting privately account for the largest housing-stress burden, but households purchasing their homes also represent a substantial share, showing that affordability pressure extends beyond renters alone.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="figure-card">
+<div class="figure-media-wrap">
+<div class="media-shell" data-filename="fig04_selected_lga_tenure_clean.png">
+<img alt="Chart comparing tenure composition across selected high-stress LGAs" loading="lazy" src="../assets/images/projects/housing-stress/fig04_selected_lga_tenure_clean.png"/>
+<div class="placeholder-art">
+<div aria-hidden="true" class="placeholder-chart">
+<span style="height:46%"></span><span style="height:92%"></span><span style="height:64%"></span><span style="height:40%"></span><span style="height:58%"></span>
+</div>
+</div>
+<div class="media-fallback">
+<strong>Waiting for the real chart image</strong>
+<code>fig04_selected_lga_tenure_clean.png</code>
+<p>The local differences matter here, especially around public rental and the balance between renting and purchasing.</p>
+</div>
+</div>
+</div>
+<div class="figure-copy">
+<span class="figure-label">Figure 04</span>
+<h3>Tenure Composition in Selected High-Stress LGAs</h3>
+<p>This compares tenure patterns across selected high-burden LGAs: Charles Sturt, Onkaparinga, Playford, Port Adelaide Enfield, and Salisbury.</p>
+<div class="figure-notes">
+<div class="figure-note">
+<strong>Main insights</strong>
+<p>In all selected LGAs, the two dominant tenure groups are private rental and being purchased. Onkaparinga has especially high counts in both private rental and purchasing stress, while Port Adelaide Enfield has a relatively stronger public-rental component than most of the others. The tenure mix is similar across these LGAs, but the balance between renting and purchasing still differs from place to place.</p>
+</div>
+<div class="figure-note">
+<strong>Key insight</strong>
+<p>High-stress LGAs share a similar tenure pattern, but with meaningful local differences. Across the selected LGAs, private rental and purchasing households make up most of the burden, with Onkaparinga high in both categories and Port Adelaide Enfield showing a comparatively larger public-rental contribution.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="figure-card">
+<div class="figure-media-wrap">
+<div class="media-shell" data-filename="fig05_cumulative_share_lgas.png">
+<img alt="Concentration curve showing the cumulative share of housing stress across ranked South Australian LGAs" loading="lazy" src="../assets/images/projects/housing-stress/fig05_cumulative_share_lgas.png"/>
+<div class="placeholder-art">
+<div aria-hidden="true" class="placeholder-chart">
+<span style="height:20%"></span><span style="height:34%"></span><span style="height:52%"></span><span style="height:72%"></span><span style="height:90%"></span>
+</div>
+</div>
+<div class="media-fallback">
+<strong>Waiting for the real chart image</strong>
+<code>fig05_cumulative_share_lgas.png</code>
+<p>This figure is one of the strongest pieces of evidence on the page because it quantifies concentration directly.</p>
+</div>
+</div>
+</div>
+<div class="figure-copy">
+<span class="figure-label">Figure 05</span>
+<h3>Cumulative Share of Housing Stress by Ranked LGA</h3>
+<p>This is a concentration curve showing how much of the total statewide housing stress is captured as more LGAs are added from highest to lowest burden.</p>
+<div class="figure-notes">
+<div class="figure-note">
+<strong>Main insights</strong>
+<p>The top 10 LGAs account for 63.9% of total housing stress. The curve rises quickly at the beginning, which means a relatively small number of LGAs carry a large share of the statewide burden. This is strong evidence that housing stress is geographically concentrated.</p>
+</div>
+<div class="figure-note">
+<strong>Key insight</strong>
+<p>Housing stress is highly concentrated geographically. The top 10 LGAs account for 63.9% of total housing stress in the dataset, and the steep early rise in the cumulative curve shows that a relatively small number of LGAs carry most of the statewide burden.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="figure-card">
+<div class="figure-media-wrap">
+<div class="media-shell" data-filename="fig06_vulnerability_scatter.png">
+<img alt="Scatter plot showing housing stress burden against very-low-income concentration across major LGAs" loading="lazy" src="../assets/images/projects/housing-stress/fig06_vulnerability_scatter.png"/>
+<div class="placeholder-art">
+<div aria-hidden="true" class="placeholder-chart">
+<span style="height:12%"></span><span style="height:24%"></span><span style="height:36%"></span><span style="height:54%"></span><span style="height:70%"></span>
+</div>
+</div>
+<div class="media-fallback">
+<strong>Waiting for the real chart image</strong>
+<code>fig06_vulnerability_scatter.png</code>
+<p>This figure helps distinguish sheer scale from deeper vulnerability.</p>
+</div>
+</div>
+</div>
+<div class="figure-copy">
+<span class="figure-label">Figure 06</span>
+<h3>Housing Stress Burden vs Very-Low-Income Concentration</h3>
+<p>This scatter plot compares total housing-stress burden on the x-axis with the share of very-low-income households on the y-axis.</p>
+<div class="figure-notes">
+<div class="figure-note">
+<strong>Main insights</strong>
+<p>Playford is the standout vulnerability case: its total burden is not the highest, but its very-low-income concentration is the strongest. Onkaparinga has the largest total burden, but its income mix is less extreme than Playford’s. Port Adelaide Enfield and Salisbury combine both high total burden and high very-low-income concentration, while Tea Tree Gully and Mitcham sit lower on the vulnerability axis and show a more mixed-income stress profile.</p>
+</div>
+<div class="figure-note">
+<strong>Key insight</strong>
+<p>Playford stands out as the most income-vulnerable high-stress LGA. Although Onkaparinga has the largest overall burden, Playford has the highest concentration of very-low-income households among the top LGAs, while Port Adelaide Enfield and Salisbury also combine high burden with strong low-income concentration.</p>
+</div>
+</div>
+</div>
+</article>
+<article class="figure-card">
+<div class="figure-media-wrap">
+<div class="media-shell" data-filename="fig07_income_composition_stacked.png">
+<img alt="Stacked chart showing income composition of housing stress across the top 10 LGAs" loading="lazy" src="../assets/images/projects/housing-stress/fig07_income_composition_stacked.png"/>
+<div class="placeholder-art">
+<div aria-hidden="true" class="placeholder-chart">
+<span style="height:82%"></span><span style="height:66%"></span><span style="height:74%"></span><span style="height:58%"></span><span style="height:62%"></span>
+</div>
+</div>
+<div class="media-fallback">
+<strong>Waiting for the real chart image</strong>
+<code>fig07_income_composition_stacked.png</code>
+<p>This figure is a strong complement to the grouped income-share chart because it makes composition easier to scan.</p>
+</div>
+</div>
+</div>
+<div class="figure-copy">
+<span class="figure-label">Figure 07</span>
+<h3>Income Composition of Housing Stress in the Top 10 LGAs</h3>
+<p>This is a stacked view of the income mix within each top LGA.</p>
+<div class="figure-notes">
+<div class="figure-note">
+<strong>Main insights</strong>
+<p>The very low-income component is visually dominant in every LGA. Playford has the strongest visual dominance of the very-low-income segment, while Tea Tree Gully, Campbelltown, and Mitcham show a more even spread across income groups. This figure complements the grouped income-share figure by making the composition easier to compare as a whole.</p>
+</div>
+<div class="figure-note">
+<strong>Key insight</strong>
+<p>The income composition of housing stress is dominated by very low-income households. Across the top 10 LGAs, the very-low-income segment forms the largest part of housing stress, with Playford showing the most concentrated low-income profile and Tea Tree Gully, Campbelltown, and Mitcham appearing more balanced.</p>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section section-alt" id="methods">
+<div class="container reveal">
+<div class="case-layout">
+<div class="case-main">
+<article class="case-section">
+<h2>Methods and analytical framing</h2>
+<p>
+                The project uses a public housing-stress dataset and organises the analysis into four complementary lenses:
+                ranking, composition, concentration, and vulnerability. That combination creates a more rounded story than any single chart alone.
+              </p>
+<ul class="finding-list">
+<li>Ranking LGAs by total housing-stress burden</li>
+<li>Comparing income composition within the highest-burden LGAs</li>
+<li>Aggregating tenure categories at both statewide and selected-LGA levels</li>
+<li>Using a cumulative-share curve to quantify geographic concentration</li>
+<li>Using a burden-vs-vulnerability comparison to distinguish scale from deeper exposure</li>
+</ul>
+<div class="note-block">
+<span class="note-label">Documentation note</span>
+<p>
+                  The page intentionally defines terms such as LGA, public rental, and 30% housing stress because strong analytical work is not only about producing results — it is also about making the work readable to the next person.
+                </p>
+</div>
+</article>
+</div>
+<aside class="sidebar-stack">
+<article class="sidebar-card">
+<span class="sidebar-label">Folder setup</span>
+<h5>Where the figures belong</h5>
+<div class="callout">
+<strong>Expected directory</strong>
+<p><code>assets/images/projects/housing-stress/</code></p>
+</div>
+<ul class="mini-list">
+<li>fig01_top15_lgas_clean.png</li>
+<li>fig02_income_share_top10_clean.png</li>
+<li>fig03_tenure_totals_clean.png</li>
+<li>fig04_selected_lga_tenure_clean.png</li>
+<li>fig05_cumulative_share_lgas.png</li>
+<li>fig06_vulnerability_scatter.png</li>
+<li>fig07_income_composition_stacked.png</li>
+</ul>
+</article>
+<article class="sidebar-card">
+<span class="sidebar-label">Why this page works</span>
+<h5>Better than overloading the homepage</h5>
+<p>
+                Keeping the homepage elegant while giving the project its own case-study page makes the site look more senior, more intentional, and easier to navigate.
+              </p>
+</article>
+</aside>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-shell">
+<p>© 2026 Parham Vatankhah</p>
+<p>Case study page ready for the seven final chart PNGs.</p>
+</div>
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>
