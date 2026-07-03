@@ -1,30 +1,34 @@
-Portfolio website update — case-study structure ready
-======================================================
+Parham Vatankhah portfolio website
+===================================
 
-What is included
-----------------
+This is a lightweight static website for GitHub Pages and the custom domain
+parhamvatankhah.com.
+
+Included files
+--------------
 - index.html
 - style.css
 - script.js
 - projects/housing-stress.html
 - assets/pdf/Parham_Vatankhah_CV_Master_Website.pdf
-- assets/images/projects/housing-stress/README_figures.txt
+- assets/images/projects/housing-stress/
+- robots.txt
+- sitemap.xml
+- 404.html
+- favicon.svg
+- site.webmanifest
 
-Why this structure is better
-----------------------------
-The homepage now stays clean and premium-looking, while the housing project lives on its own dedicated case-study page.
-That is the stronger portfolio pattern because it:
-- keeps the homepage elegant
-- shows depth when someone clicks into the project
-- makes the work look more intentional and professional
-
-Figure folder
+Website focus
 -------------
-Put the seven chart PNG files in this exact folder:
+The homepage positions Parham Vatankhah as a PhD researcher working in
+cardiovascular CFD, computational haemodynamics, thoracic aortic flow, Python
+automation, Ansys Fluent workflows, and AI for simulation.
 
-assets/images/projects/housing-stress/
+Project pages
+-------------
+The South Australian housing stress project is retained as a completed data
+case study. Its seven PNG figures are integrated directly into the page:
 
-Use these exact filenames:
 - fig01_top15_lgas_clean.png
 - fig02_income_share_top10_clean.png
 - fig03_tenure_totals_clean.png
@@ -33,40 +37,17 @@ Use these exact filenames:
 - fig06_vulnerability_scatter.png
 - fig07_income_composition_stacked.png
 
-Important
----------
-The site is already wired to these exact filenames.
-If the file exists, the chart will appear automatically.
-If the file does not exist yet, a clean placeholder is shown instead of a broken image.
-
-Recommended final website structure
------------------------------------
-/
-├── index.html
-├── style.css
-├── script.js
-├── projects/
-│   └── housing-stress.html
-└── assets/
-    ├── pdf/
-    │   └── Parham_Vatankhah_CV_Master_Website.pdf
-    └── images/
-        └── projects/
-            └── housing-stress/
-                ├── fig01_top15_lgas_clean.png
-                ├── fig02_income_share_top10_clean.png
-                ├── fig03_tenure_totals_clean.png
-                ├── fig04_selected_lga_tenure_clean.png
-                ├── fig05_cumulative_share_lgas.png
-                ├── fig06_vulnerability_scatter.png
-                └── fig07_income_composition_stacked.png
-
-Deployment note
+Preview locally
 ---------------
-If you are replacing your current repository files, keep the folder names exactly the same.
-Because all links are relative, this structure works cleanly on GitHub Pages and on a custom domain.
+From the repository root:
 
-My recommendation
------------------
-Upload the seven exported PNG files next and then test the site locally or on GitHub Pages.
-Once the real figures are in place, the project will look much more complete and much more persuasive.
+python -m http.server 8000 --bind 127.0.0.1
+
+Then open:
+
+http://127.0.0.1:8000/
+
+Deployment
+----------
+Push changes to the GitHub Pages branch configured for the repository. Keep the
+CNAME file unchanged so the custom domain remains connected.

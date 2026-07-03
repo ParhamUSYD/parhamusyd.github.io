@@ -1,0 +1,16 @@
+{
+  "name": "Parham Vatankhah",
+  "short_name": "Parham",
+  "description": "Cardiovascular CFD, computational haemodynamics, Python automation, and AI for simulation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050b15",
+  "theme_color": "#050b15",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}
