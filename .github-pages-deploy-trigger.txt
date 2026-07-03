@@ -1,0 +1,3 @@
+GitHub Pages redeploy trigger.
+Created by ChatGPT to force a fresh Pages deployment after the deploy job became stuck/failed while the updated index.html was already present on main.
+Timestamp UTC: 2026-07-04T00:00:00Z
